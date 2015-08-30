@@ -79,7 +79,7 @@ function generateBoard(array) {
   for (var i = 0; i < 5; i++) {
     bingoBoard[i] = array.slice(i * 5, (i * 5) + 5);
   }
-  bingoBoard[2][2] = 'FREE';
+  bingoBoard[2][2] = 'PAY-GO';
 
   return bingoBoard;
 }
