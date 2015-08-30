@@ -45,6 +45,7 @@ app.get('/boards', function(req, res) {
   });
 });
 
+var port = process.env.PORT || 8000;
 var server = app.listen(8000, function() {
   var host = server.address().address;
   var port = server.address().port;
@@ -79,7 +80,6 @@ function generateBoard(array) {
     bingoBoard[i] = array.slice(i * 5, (i * 5) + 5);
   }
   bingoBoard[2][2] = 'FREE';
-  console.log(bingoBoard);
 
   return bingoBoard;
 }
