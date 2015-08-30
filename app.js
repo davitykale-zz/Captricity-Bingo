@@ -13,7 +13,6 @@ app.get('/', function(req, res) {
   bingoSheet.getInfo(function(err, data) {
     var date = new Date(data.updated);
     res.render('index', {
-      date: date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear() + ' at ' + date.getHours() + ':' + date.getMinutes(),
       title: data.title
     });
   });
