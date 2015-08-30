@@ -1,0 +1,26 @@
+doctype html
+html
+  include _head.jade
+  body
+    include _header.jade
+
+    div(class='row')
+      div(class='container')
+        div(class='col-md-4')
+          p It's Bingo, Bitch
+          blockquote
+            | Source: #{title}
+            br
+            |Author: #{author}
+
+        div(class='col-md-8')
+          form(name="bingo", action='boards')
+            label How many bingo boards do you want?
+            div(class='row')
+              div(class='col-md-8')
+                div(class='input-group')
+                  span(class='input-group-addon') #
+                  input(class='form-control', type='text', name='numBoards', placeholder='Number of boards')
+
+              button(class='btn btn-default col-md-4', type='submit') Bye, Felicia
+    include _footer.jade

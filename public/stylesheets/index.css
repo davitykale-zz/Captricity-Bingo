@@ -1,0 +1,102 @@
+body {
+  background-color: #F9F8F4;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button.btn-default.btn {
+  background-color: #1BABE2;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  padding: 11px 26px;
+}
+
+button.btn-default.btn:hover {
+  background-color: #75AF37;
+}
+
+footer {
+  background-color: #1BABE2;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+input[type="text"] {
+  border: 1px solid #CDCDCD;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 23px;
+  padding-top: 22px;
+}
+
+#nav {
+  background-color: #1BABE2;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+
+#nav span {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  vertical-align: -3%;
+}
+
+#nav-bottom {
+  background-color: #196E99;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 45px;
+}
+
+#nav-bottom span {
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-top: 11px;
+}
+
+label,
+p {
+  color: #606161;
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.input-group-addon {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.jumbotron {
+  background-color: #0CB1F2;
+  color: white;
+}

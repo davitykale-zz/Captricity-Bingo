@@ -1,0 +1,15 @@
+doctype html
+html
+  include _head.jade
+  body
+    include _header.jade
+    div(class='container')
+      button(id='print', class='btn btn-default', onclick='window.print()') Print
+      for board in boards
+        table
+          for header in ['B', 'I', 'N', 'G', 'O']
+            th= header
+          for option in board
+            tr
+              for suboption in option
+                td= suboption
