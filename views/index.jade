@@ -9,9 +9,11 @@ html
         div(class='col-md-4')
           p It's Bingo, Bitch
           blockquote
-            | Source: #{title}
+            strong Source:
+            |  #{title}
             br
-            |Author: #{author}
+            strong Updated:
+            |  #{date}
 
         div(class='col-md-8')
           form(name="bingo", action='boards')

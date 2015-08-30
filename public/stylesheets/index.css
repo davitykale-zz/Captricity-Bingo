@@ -17,6 +17,10 @@ button.btn-default.btn {
   padding: 11px 26px;
 }
 
+blockquote strong {
+  font-weight: 700;
+}
+
 button.btn-default.btn:hover {
   background-color: #75AF37;
 }

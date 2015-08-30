@@ -11,9 +11,9 @@ app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
   bingoSheet.getInfo(function(err, data) {
-    console.log(data);
+    var date = new Date(data.updated);
     res.render('index', {
-      author: data.author.email,
+      date: date.getMonth() + '/' + date.getDay() + '/' + date.getFullYear() + ' at ' + date.getHours() + ':' + date.getMinutes(),
       title: data.title
     });
   });
